@@ -1,16 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react';
+import "./App.css";
+import Home from "./components/home/home";
+import Resume from "./components/Resume/resume";
+import AboutMe from "./components/AboutMe/aboutMe";
+import Contacts from "./components/contacts/contacts";
+import Topbar from "./components/Topbar/Topbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello world
-        </p>
-      </header>
+    <div className="app">
+        <Topbar/>
+        <div className={"sections"}>
+            <Home/>
+            <AboutMe/>
+            <Resume/>
+            <Contacts/>
+        </div>
     </div>
   );
 }
