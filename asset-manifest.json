@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ShreyansJain/static/css/main.08203c8f.css",
+    "main.js": "/ShreyansJain/static/js/main.de441e3b.js",
+    "index.html": "/ShreyansJain/index.html",
+    "main.08203c8f.css.map": "/ShreyansJain/static/css/main.08203c8f.css.map",
+    "main.de441e3b.js.map": "/ShreyansJain/static/js/main.de441e3b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08203c8f.css",
+    "static/js/main.de441e3b.js"
+  ]
+}
