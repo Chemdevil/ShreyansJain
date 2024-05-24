@@ -1,0 +1,119 @@
+.contacts{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: fit-content;
+    background: floralwhite url("../../assets/Home/backgroundOtherPages.jpg") no-repeat center;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.contact-Component {
+    width: 80%;
+    height: 90%;
+    background: rgba(0, 0, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.sendMessage div{
+    position: relative;
+    padding: 1vh;
+    font-size: 2rem;
+    font-weight: 300;
+    color:var(--white);
+    }
+
+.sendMessage div::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 4.8em;
+    border-bottom: 0.3rem solid var(--dark-orange);
+    width: 19%;
+}
+
+.getInTouch div{
+    position: relative;
+    padding: 1vh;
+    font-size: 2rem;
+    font-weight: 300;
+    color:var(--white);
+}
+
+.getInTouch div::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5.5em;
+    border-bottom: 0.3rem solid var(--dark-orange);
+    width: 19%;
+}
+
+.colz .colz-icon i{
+    color:var(--white);
+    margin: 1.3vh;
+    padding: 4px 8px 4px 8px;
+    border-radius:10px ;
+    font-size: 3em;
+    border: 1px solid var(--dark-orange);
+}
+.colz .colz-icon i:hover{
+    transform:scale(1.25);
+    transition:1s ease-in-out;
+}
+
+input,textarea{
+    min-width: 25rem;
+    color:#1E1E1E;
+    padding: 0.5rem 0.5rem;
+    border:1px solid var(--dark-orange);
+    box-shadow: grey;
+}
+
+.input-textField{
+    min-width: 25rem;
+    color:#ffffff;
+    padding: 0.5rem 0.5rem;
+    border:1px solid var(--dark-orange);
+    box-shadow: grey;
+}
+
+input[type="submit"]{
+    max-width: 10rem;
+    background-color: var(--dark-orange);
+    border-style: solid;
+    border-radius: 20px;
+    border-width: .1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.contact-inputs{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2rem;
+}
+.contact-inputs input[type="submit"]{
+    cursor:pointer;
+    transition: all 0.2s;
+    &:hover{
+        border:1px solid var(--dark-orange);
+        color:var(--dark-orange);
+        transform: scale(0.9);
+        background-color: #ffffff;
+    }
+}
+
+.contact-form{
+    max-width: 50rem;
+    margin: auto;
+}

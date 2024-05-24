@@ -1,0 +1,228 @@
+.resume{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: fit-content;
+    background: floralwhite url("../../assets/Home/backgroundOtherPages.jpg") no-repeat center;
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.resume-Component {
+    width: 80%;
+    height: 90%;
+    /*background: rgba(0, 0, 0);*/
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.resumeMenu{
+    width: 100px;
+    height: 79.5vh;
+    position: fixed;
+    top:0;
+    left:-25px;
+    z-index:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.resumeMenu ul{
+    margin:0;
+    padding: 0;
+    list-style:none;
+    font-size: 2rem;
+    font-weight: 300;
+    color:var(--dark-orange);
+    width: 60%;
+}
+.resumeMenu ul li{
+    margin-bottom: 25px;
+}
+
+.resumeMenu ul li a{
+    font-size: inherit;
+    color:inherit;
+    text-decoration: none;
+}
+
+.resumeMenu ul li:hover {
+    font-weight: 500;
+    transition: all 500ms ease;
+}
+
+.menuLabel{
+    width: 300px;
+    position: fixed;
+    /*left:-300px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.menuLabel.activeResumeMenu{
+    left:30px;
+}
+
+.menuIcon{
+    color:var(--dark-orange);
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.education.activeResumeMenu{
+    color:var(--white);
+}
+
+.resume-detail{
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    background-color: inherit;
+}
+
+.resume-detail-title{
+    font-family: 'Roboto';
+    font-size: 3rem;
+    font-weight: 300;
+    color:var(--dark-orange);
+}
+
+.resume-detail-content{
+    padding-top:3%;
+    /*max-height: 65vh;*/
+    font-size: 1rem;
+    color:#ffffff;
+    font-family: "Roboto Thin";
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.resume-detail-content .stepHead{
+    color:var(--dark-orange);
+
+}
+
+.resume-detail-content .stepHeadTitle{
+    color:var(--dark-orange);
+    font-size: 2rem;
+    font-weight: 300;
+}
+.resume-detail-content .stepContentTitle{
+    color:var(--white);
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+.resume-detail-content .stepContentDate{
+    color:var(--white);
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.educationBullet{
+    color:var(--dark-orange);
+    margin-top: 1rem;
+}
+
+.degreeTitle{
+    font-size: 2rem;
+    font-weight: 300;
+    /*font-family: "Poppins SemiBold";*/
+    color:var(--dark-orange);
+}
+.degreeContent{
+    color:var(--white);
+    font-family: Roboto;
+    font-size: 1.25rem;
+}
+
+.degreeComponent{
+  margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.iconStyle{
+    height: 60px;
+    width: 65px;
+    margin: 1px;
+    marginBottom: 0;
+}
+
+.skillContent{
+    margin-left:5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillContentTitle{
+    font-family: "Roboto B";
+    font-size: 2.5rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--white);
+}
+
+.projectContent{
+    margin-left:5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectTitle{
+    font-size:1.5rem;
+    font-family: Poppins;
+    font-weight:300;
+    color:var(--dark-orange);
+}
+.projectIcon{
+    color:var(--dark-orange);
+}
+.projectDescription{
+    font-size:1.25rem;
+    font-family: "Roboto",monospace;
+    padding-right: 0.3rem;
+}
+
+.paperContent{
+    margin-left:2vh;
+    display: flex;
+    /*border:1px solid black;*/
+    /*background: #1f2235;*/
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.publicationDOI{
+    color:var(--dark-orange);
+    text-decoration: none;
+}
+
+.publicationAbstractButton{
+    cursor: pointer;
+    color: var(--dark-orange);
+    font-size: 1.2rem;
+}
+
+.publicationAbstract{
+    background-color: #808080;
+    color:black;
+    border-radius: 10px;
+    padding: 1vh;
+    font-size: 1.25rem;
+    overflow: hidden;
+}

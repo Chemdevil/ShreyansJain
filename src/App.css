@@ -1,0 +1,45 @@
+.app{
+  height:100vh;
+  .sections {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: lightcoral;
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; /*for firefox*/
+
+    &::-webkit-scrollbar {
+      display: none;/*for other browsers*/
+    }
+    > *{
+      width: 100vw;
+      height: calc(100 - 70vh);
+      scroll-snap-align: start;
+    }
+  }
+}
+
+:root{
+  --light-blue : #04C3FF;
+  --light-blue-shadow:  rgb(69 211 255 / 27%);
+  --sea-green: #0ABEAD;
+  --sea-green-dark: #0CBFAE;
+  --sea-green-extra-dark: #09BEAD;
+  --sea-green-shadow: rgba(11, 190, 173,0.4);
+  --header-hamburger-background : rgba(11, 190, 173,0.8);
+  --orange: #F57F17;
+  --dark-orange: #FF5823;
+  --orange-shadow: rgba(245, 127, 23,0.2);
+  --white: #ffffff;
+  --black: #333333;
+  --disabled-btn: #09bead7a;
+  --error-message:  #e44f4fd1;
+  --toast-error: #e44f4ffa;
+  --toast-shadow:  #9c9c9ce3;
+  --toast-success: #0CBFAE;
+  --loader-color: #0CBFAE;
+  --maincolour:#1E1E1E;
+  /*--maincolour:#242F36;*/
+}
